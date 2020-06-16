@@ -1,0 +1,26 @@
+/* ANIMATIONS */
+
+@keyframes planet {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.07);
+    }
+}
+
+[data-aos="fade-left"].aos-animate {
+    transform: translate3d(0, 0, 0) !important;
+    opacity: 1 !important;
+}
+
+
+@media (min-width: 768px) {
+    .planet {
+        animation-name: planet;
+        animation-duration: 15s;
+        animation-fill-mode: forwards;
+
+    }
+}

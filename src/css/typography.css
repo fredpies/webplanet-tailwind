@@ -1,0 +1,132 @@
+/* FONTS */
+
+@font-face {
+
+    font-family: audiowide;
+    src: url('../assets/fonts/Audiowide-Regular.eot'),
+    url('../assets/fonts/Audiowide-Regular.svg') format('svg'),
+    url('../assets/fonts/Audiowide-Regular.woff') format('woff');
+
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'menu-icons';
+    src:  url('../assets/fonts/menu-icons.eot?4jd2pc');
+    src:  url('../assets/fonts/menu-icons.eot?4jd2pc#iefix') format('embedded-opentype'),
+    url('../assets/fonts/menu-icons.ttf') format('truetype'),
+    url('../assets/fonts/menu-icons.woff') format('woff'),
+    url('../assets/fonts/menu-icons.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'menu-icons' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-email:before {
+    content: "\e900";
+}
+.icon-responsive:before {
+    content: "\e901";
+}
+.icon-group:before {
+    content: "\e902";
+}
+.icon-home:before {
+    content: "\e903";
+}
+
+.icon-hamburger:before {
+    content: "\e904";
+}
+
+.icon-service:before {
+    content: "\e905";
+}
+
+/* RESPONSIVE CONTAINER - DESKTOP FIRST */
+
+.main-container {
+    @apply .mx-auto;
+    width: 1600px;
+}
+
+@media (max-width: 1920px) {
+    .main-container {
+        max-width: 1500px;
+    }
+}
+
+@media (max-width: 1680px) {
+    .main-container {
+        max-width: 85%;
+    }
+}
+
+@media (max-width: 1440px) {
+    .main-container {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 1280px) {
+    .main-container {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .main-container {
+        max-width: 85%;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        max-width: 92%;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-container {
+        max-width: 90%;
+    }
+}
+
+/* HEADLINES */
+
+h1 {
+    @apply .text-wp-blue-light .font-audiowide;
+}
+
+h2 {
+
+    @apply .text-wp-blue-light .mb-8 .font-audiowide .font-bold .tracking-wider .uppercase;
+}
+
+h3 {
+    @apply .tracking-wider;
+}
+
+p {
+    @apply .text-gray-400 .mt-8 .mb-4 .tracking-wider;
+    font-size-responsive: 1rem 1.5rem 320px 1920px;
+}
+
+
