@@ -17429,6 +17429,10 @@ video {
   z-index: 50;
 }
 
+.z-60 {
+  z-index: 60;
+}
+
 .z-auto {
   z-index: auto;
 }
@@ -40608,6 +40612,10 @@ label.error {
     z-index: 50;
   }
 
+  .xxl\:z-60 {
+    z-index: 60;
+  }
+
   .xxl\:z-auto {
     z-index: auto;
   }
@@ -61858,6 +61866,10 @@ label.error {
 
   .xl\:z-50 {
     z-index: 50;
+  }
+
+  .xl\:z-60 {
+    z-index: 60;
   }
 
   .xl\:z-auto {
@@ -83112,6 +83124,10 @@ label.error {
     z-index: 50;
   }
 
+  .xl2\:z-60 {
+    z-index: 60;
+  }
+
   .xl2\:z-auto {
     z-index: auto;
   }
@@ -104362,6 +104378,10 @@ label.error {
 
   .lg\:z-50 {
     z-index: 50;
+  }
+
+  .lg\:z-60 {
+    z-index: 60;
   }
 
   .lg\:z-auto {
@@ -125616,6 +125636,10 @@ label.error {
     z-index: 50;
   }
 
+  .md\:z-60 {
+    z-index: 60;
+  }
+
   .md\:z-auto {
     z-index: auto;
   }
@@ -146866,6 +146890,10 @@ label.error {
 
   .sm\:z-50 {
     z-index: 50;
+  }
+
+  .sm\:z-60 {
+    z-index: 60;
   }
 
   .sm\:z-auto {
@@ -168120,6 +168148,10 @@ label.error {
     z-index: 50;
   }
 
+  .xsm\:z-60 {
+    z-index: 60;
+  }
+
   .xsm\:z-auto {
     z-index: auto;
   }
@@ -189370,6 +189402,10 @@ label.error {
 
   .iphone5\:z-50 {
     z-index: 50;
+  }
+
+  .iphone5\:z-60 {
+    z-index: 60;
   }
 
   .iphone5\:z-auto {
