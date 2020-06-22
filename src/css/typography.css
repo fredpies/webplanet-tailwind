@@ -69,7 +69,7 @@
 
 @media (max-width: 1920px) {
     .main-container {
-        max-width: 1500px;
+        max-width: 1400px;
     }
 }
 
@@ -109,6 +109,31 @@
     }
 }
 
+/* RESPONSIVE CONTAINER FOR PANEL - DESKTOP FIRST */
+
+.panel-container {
+    @apply .mx-auto .pt-8;
+    width: 1600px;
+}
+
+@media (max-width: 1920px) {
+    .panel-container {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) and (orientation: portrait){
+    .panel-container {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 479px) {
+    .panel-container {
+        max-width: 100%;
+    }
+}
+
 /* HEADLINES */
 
 h1 {
@@ -124,9 +149,12 @@ h3 {
     @apply .tracking-wider;
 }
 
-p {
-    @apply .text-gray-400 .mt-8 .mb-4 .tracking-wider;
-    font-size-responsive: 1rem 1.5rem 320px 1920px;
+p, li:not([class*="menu-item"]) {
+    @apply .text-gray-400 .tracking-wide;
+    font-size-responsive: 1.2rem 1.3rem 1680px 1920px;
+    font-size-responsive: 0.9rem 1.2rem 320px 1680px;
 }
+
+
 
 

@@ -18,6 +18,16 @@ module.exports = {
 
         extend: {
 
+        zIndex: {
+            auto: 'auto',
+            '0': '0',
+            '10': '10',
+            '20': '20',
+            '30': '30',
+            '40': '40',
+            '50': '50',
+        },
+
         // MAIN COLORS
         // All custom colors have 'wp-' prefix
         colors: {
@@ -147,6 +157,10 @@ module.exports = {
                 '90': '22.5rem',
                 '92': '23rem',
                 '96': '24rem',
+        },
+
+        opacity: {
+            '85': '0.85',
         },
 
     },
