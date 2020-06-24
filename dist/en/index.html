@@ -104,9 +104,9 @@
       </section>
       <!-- Online products-->
       <section id="online-products">
-        <div class="main-container">
+        <div class="main-container pb-20">
           <h2 class="pt-8" data-aos="fade-in">Websites</h2>
-          <h3 data-aos="fade-in">that meet your needs</h3>
+          <h3 data-aos="fade-in" class="pb-6">that meet your needs</h3>
           <div class="panels">
             <div class="panel-container">
               <div class="panel">
@@ -131,7 +131,7 @@
                     </div>
                   </div>
                 </div>
-                <p class="panel-text">We create websites adapted to the specifics and requirements of our clients.Our client decides about the shape and scope of the product.</p>
+                <p class="panel-text">We create websites adapted to the specifics and requirements of our clients. Our client decides about the shape and scope of the product.</p>
               </div>
             </div>
             <div class="panel-container">
@@ -140,7 +140,7 @@
                   <div class="panel-top"><img class="panel-image" src="/assets/img/machine.png" alt="Responsive Design"/>
                     <h2 class="panel-title h-1/5">Website redesign</h2>
                     <div class="panel-overlay-text">
-                      <p class="m-0">We re-design and update websites providing them with a modern look and better visual identification by the user by improving quality.</p>
+                      <p class="m-0">We redesign and update websites providing them with a modern look and better visual identification by the user by improving quality.</p>
                     </div>
                   </div>
                 </div>
@@ -151,10 +151,10 @@
         </div>
       </section>
       <!-- Service-->
-      <section id="stay-tuned">
-        <div class="main-container">
-          <h2 class="py-8">Support for our clients</h2>
-          <div class="flex bg-wp-blue-background" id="stay-tuned-contents">
+      <section id="stay-tuned" class="bg-cover bg-fixed" style="background-image: url('/assets/img/planet2.jpeg')">
+        <div class="main-container pb-20">
+          <h2 class="py-12">Support for our clients</h2>
+          <div class="flex bg-wp-blue-background border border-gray-900" id="stay-tuned-contents">
             <div class="col overflow-hidden relative"><img class="object-cover relative mx-auto" src="/assets/img/tablet.png"></div>
             <div class="col flex flex-col justify-center content-center">
               <p>After the launching period, we provide our clients with <span class="text-gray-100">technical support</span> in the maintenance of developed websites.</p>
@@ -180,26 +180,29 @@
       </section>
       <section id="calculator">
         <div class="main-container">
-          <h2 class="pt-8">Użyj naszego kalkulatora</h2>
-          <h3 class="pb-8">do określenia wstępnych kosztów projektu
+          <h2 class="pt-8">Use our calculator</h2>
+          <h3 class="pb-8">to estimate the pricing of the project
             <form>
               <table class="calculator-table">
                 <thead>
                   <tr>
                     <td></td>
-                    <td><img class="tooltip" title="Pojedyncza witryna WWW" src="/assets/img/question.svg"><span>Wizytówka</span></td>
+                    <td><img class="tooltip" title="A single website" src="/assets/img/question.svg"><span>Single Page Website</span></td>
                     <td></td>
-                    <td><img class="tooltip" title="Wielostronicowa witryna WWW" src="/assets/img/question.svg"><span>Multi WWW</span></td>
+                    <td><img class="tooltip" title="A website containing more than one page" src="/assets/img/question.svg"><span>Multi-Page Website</span></td>
                     <td></td>
-                    <td><img class="tooltip" title="Dedykowana aplikacja WWW" src="/assets/img/question.svg"><span>Aplikacja</span></td>
+                    <td><img class="tooltip" title="A customized web application" src="/assets/img/question.svg"><span>Web Application</span></td>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td><img class="tooltip-left" title="Opracowanie witryny WWW obejmuje projekt graficzny witryny wraz z wykonaniem jednej strony.&lt;br&gt;&lt;br&gt;Dla witryny w wersji &lt;b&gt;Multi WWW&lt;/b&gt; całkowity koszt zależy od liczby podstron." src="/assets/img/question.svg"><span>Opracowanie witryny WWW</span></td>
                     <td>
-                      <button class="add">Dodaj do wyceny</button>
-                      <button class="remove hidden">Usuń z wyceny</button>
+                      <img class="tooltip-left" title="Website development includes graphic design of the website with &lt;b&gt;Single Page&lt;/b&gt; development.&lt;br&gt;&lt;br&gt;For &lt;b&gt;Multi-Page&lt;/b&gt; website, the total price depends on the number of subpages." src="/assets/img/question.svg">
+                      <span>Website development</span>
+                    </td>
+                    <td>
+                      <button class="add">Add to quote</button>
+                      <button class="remove hidden">Remove quote</button>
                       <input class="price" type="hidden" name="development" value="0">
                     </td>
                     <td></td>
@@ -209,98 +212,98 @@
                       <input class="price" type="hidden" name="pages" value="0">
                     </td>
                     <td class="value">0</td>
-                    <td class="custom">Wycena indywidualna</td>
+                    <td class="custom">Individual pricing</td>
                   </tr>
                   <tr>
-                    <td><img class="tooltip-left" title="Panel administratora to dodatkowa funkcjonalność umożliwiająca edycję treści zamieszczonych na witrynie w wersji &lt;b&gt;Multi WWW&lt;/b&gt;." src="/assets/img/question.svg"><span>Panel administratora</span></td>
+                    <td><img class="tooltip-left" title="The &lt;b&gt;Admin Panel&lt;/b&gt; is an additional functionality that allows editing of content on the site in the &lt;b&gt;Multi-Page&lt;/b&gt; version." src="/assets/img/question.svg"><span>Admin panel</span></td>
                     <td></td>
                     <td></td>
                     <td>
-                      <button class="add" id="js-panel-add-button">Dodaj do wyceny</button>
-                      <button class="remove hidden" id="js-panel-remove-button">Usuń do wyceny</button>
+                      <button class="add" id="js-panel-add-button">Add to quote</button>
+                      <button class="remove hidden" id="js-panel-remove-button">Remove quote</button>
                       <input class="price" type="hidden" name="panel" value="0">
                     </td>
                     <td></td>
-                    <td class="custom">Wycena indywidualna</td>
+                    <td class="custom">Individual pricing</td>
                   </tr>
                   <tr>
-                    <td><img class="tooltip-left" title="Przebudowa istniejącej witryny obejmuje wykonanie nowego projektu graficznego witryny wraz z realizacją.&lt;br&gt;&lt;br&gt; Cena zależy od dodatkowych elementów wymagających przeprojektowania." src="/assets/img/question.svg"><span>Przebudowa istniejącej witryny</span></td>
+                    <td><img class="tooltip-left" title="The redevelopment of an existing website includes the design of a new graphic layout along with the implementation of the website..&lt;br&gt;&lt;br&gt; The price depends on additional elements requiring redesign." src="/assets/img/question.svg"><span>Redevelopment of existing site</span></td>
                     <td>
-                      <button class="add">Dodaj do wyceny</button>
-                      <button class="remove hidden">Usuń z wyceny</button>
+                      <button class="add">Add to quote</button>
+                      <button class="remove hidden">Remove quote</button>
                       <input class="price" type="hidden" name="redesign" value="0">
                     </td>
                     <td></td>
                     <td>
-                      <button class="add">Dodaj do wyceny</button>
-                      <button class="remove hidden">Usuń z wyceny</button>
+                      <button class="add">Add to quote</button>
+                      <button class="remove hidden">Remove quote</button>
                       <input class="price" type="hidden" name="redesign-multi" value="0">
                     </td>
                     <td></td>
-                    <td class="custom">Wycena indywidualna</td>
+                    <td class="custom">Individual pricing</td>
                   </tr>
                   <tr>
-                    <td><img class="tooltip-left" title="Opcja obejmuje wykonanie interaktywnej galerii fotografii." src="/assets/img/question.svg"><span>Galeria</span></td>
+                    <td><img class="tooltip-left" title="This option adds an interactive photo gallery." src="/assets/img/question.svg"><span>Gallery</span></td>
                     <td>
-                      <button class="add">Dodaj do wyceny</button>
-                      <button class="remove hidden">Usuń z wyceny</button>
+                      <button class="add">Add to quote</button>
+                      <button class="remove hidden">Remove quote</button>
                       <input class="price" type="hidden" name="gallery" value="0">
                     </td>
                     <td></td>
                     <td>
-                      <button class="add">Dodaj do wyceny</button>
-                      <button class="remove hidden">Usuń z wyceny</button>
+                      <button class="add">Add to quote</button>
+                      <button class="remove hidden">Remove quote</button>
                       <input class="price" type="hidden" name="gallery-multi" value="0">
                     </td>
                     <td></td>
-                    <td class="custom">Wycena indywidualna</td>
+                    <td class="custom">Individual pricing</td>
                   </tr>
                   <tr>
-                    <td><img class="tooltip-left" title="Opcja obejmuje wykonanie formularza kontaktowego dla odwiedzających witrynę. Użytkownik może wysłać wiadomość do administratora witryny lub na wybrany adres e-mail." src="/assets/img/question.svg"><span>Formularz kontaktowy</span></td>
+                    <td><img class="tooltip-left" title="This option adds a contact form for website visitors. The user can send a message to the site administrator or to the selected email address." src="/assets/img/question.svg"><span>Contact form</span></td>
                     <td>
-                      <button class="add">Dodaj do wyceny</button>
-                      <button class="remove hidden">Usuń z wyceny</button>
+                      <button class="add">Add to quote</button>
+                      <button class="remove hidden">Remove quote</button>
                       <input class="price" type="hidden" name="contact-form" value="0">
                     </td>
                     <td></td>
                     <td>
-                      <button class="add">Dodaj do wyceny</button>
-                      <button class="remove hidden">Usuń z wyceny</button>
+                      <button class="add">Add to quote</button>
+                      <button class="remove hidden">Remove quote</button>
                       <input class="price" type="hidden" name="contact-form-multi" value="0">
                     </td>
                     <td></td>
-                    <td class="custom">Wycena indywidualna</td>
+                    <td class="custom">Individual pricing</td>
                   </tr>
                   <tr>
-                    <td><img class="tooltip-left" title="Opcja obejmuje wykonanie jednego efektu trójwymiarowej głębi widocznej podczas przewijania treści witryny.&lt;br&gt;&lt;br&gt;Dla witryny w wersji &lt;b&gt;Multi WWW&lt;/b&gt; efekt może być wykonany w czterech miejscach." src="/assets/img/question.svg"><span>Efekt głębi (parallax)</span></td>
+                    <td><img class="tooltip-left" title="This option includes adding an effect of three-dimensional depth that is visible when scrolling the website content.&lt;br&gt;&lt;br&gt;For a &lt;b&gt;Multi-Page&lt;/b&gt; website, the effect can be added in four places." src="/assets/img/question.svg"><span>Effect in depth (parallax)</span></td>
                     <td>
-                      <button class="add">Dodaj do wyceny</button>
-                      <button class="remove hidden">Usuń z wyceny</button>
+                      <button class="add">Add to quote</button>
+                      <button class="remove hidden">Remove quote</button>
                       <input class="price" type="hidden" name="parallax" value="0">
                     </td>
                     <td></td>
                     <td>
-                      <button class="add">Dodaj do wyceny</button>
-                      <button class="remove hidden">Usuń z wyceny</button>
+                      <button class="add">Add to quote</button>
+                      <button class="remove hidden">Remove quote</button>
                       <input class="price" type="hidden" name="parallax-multi" value="0">
                     </td>
                     <td></td>
-                    <td class="custom">Wycena indywidualna</td>
+                    <td class="custom">Individual pricing</td>
                   </tr>
                   <tr>
-                    <td><img class="tooltip-left" title="Opcja obejmuje wykonanie bloga na witrynie internetowej. Opcja wymaga panelu administratora." src="/assets/img/question.svg"><span>Blog</span></td>
+                    <td><img class="tooltip-left" title="This option adds a blog to your website. This option requires an admin panel." src="/assets/img/question.svg"><span>Blog</span></td>
                     <td></td>
                     <td></td>
                     <td>
-                      <button class="add" id="js-blog-add-button">Dodaj do wyceny</button>
-                      <button class="remove hidden" id="js-blog-remove-button">Usuń z wyceny</button>
+                      <button class="add" id="js-blog-add-button">Add to quote</button>
+                      <button class="remove hidden" id="js-blog-remove-button">Remove quote</button>
                       <input class="price" type="hidden" name="blog-multi" value="0">
                     </td>
                     <td></td>
-                    <td class="custom">Wycena indywidualna</td>
+                    <td class="custom">Individual pricing</td>
                   </tr>
                   <tr>
-                    <td><img class="tooltip-left" title="Opcja umożliwia wycenę liczy strumieni video(filmów), które mają być umieszczone na witrynie." src="/assets/img/question.svg"><span>Streaming video</span></td>
+                    <td><img class="tooltip-left" title="This option allows you to estimate the price of streaming videos (movies) to be placed on your website." src="/assets/img/question.svg"><span>Streaming video</span></td>
                     <td>
                       <button class="plus">+</button>
                       <button class="minus">-</button>
@@ -313,10 +316,10 @@
                       <input class="price" type="hidden" name="streaming-multi" value="0">
                     </td>
                     <td class="value">0</td>
-                    <td class="custom">Wycena indywidualna</td>
+                    <td class="custom">Individual pricing</td>
                   </tr>
                   <tr>
-                    <td><img class="tooltip-left" title="Opcja umożliwia wycenę interaktywnych animacji, które mają być umieszczone na witrynie. Animacja nie obejmuje efektów 3D&lt;br&gt;&lt;br&gt;Bardziej zaawansowana animacja wymaga szczegółowej wyceny." src="/assets/img/question.svg"><span>Animacje</span></td>
+                    <td><img class="tooltip-left" title="This option allows you to estimate the price of interactive animations to be placed on the website. Animation does not include 3D effects&lt;br&gt;&lt;br&gt;More advanced animation requires more detailed price estimation." src="/assets/img/question.svg"><span>Animations</span></td>
                     <td>
                       <button class="plus">+</button>
                       <button class="minus">-</button>
@@ -329,7 +332,7 @@
                       <input class="price" type="hidden" name="animations-multi" value="0">
                     </td>
                     <td class="value">0</td>
-                    <td class="custom">Wycena indywidualna</td>
+                    <td class="custom">Individual pricing</td>
                   </tr>
                 </tbody>
                 <tfoot>
@@ -337,20 +340,19 @@
                     <td></td>
                     <td class="summary">
                       <div class="sum">EUR 0</div>
-                      <div class="tax">z VAT</div>
-                      <button class="send">Wyślij zapytanie</button>
+                      <div class="tax">Netto</div>
+                      <button class="send">Send inquiry</button>
                     </td>
                     <td></td>
                     <td class="summary">
                       <div class="sum">EUR 0</div>
-                      <div class="tax">z VAT</div>
-                      <button class="send">Wyślij zapytanie</button>
+                      <div class="tax">Netto</div>
+                      <button class="send">Send inquiry</button>
                     </td>
                     <td></td>
                     <td class="summary">
                       <div class="info text-base">
-                        Skontaktuj się z nami w celu otrzymania szczegółowej wyceny.
-                        
+                        Contact us for a detailed quote
                       </div>
                     </td>
                   </tr>
@@ -361,17 +363,17 @@
           <div class="overlay-container send"></div>
           <div class="overlay-contents">
             <form class="bg-gray-100 overlay-inside px-16" id="send-form">
-              <p class="text-black py-8">Proszę podać adres e-mail i opcjonalnie numer telefonu. Po otrzymaniu zapytania nasz konsultant skontaktuje się w celu omówienia szczegółow.</p>
+              <p class="text-black py-8">Please enter your email address and phone number (optionally). After receiving your inquiry, our consultant will contact you to discuss the details.</p>
               <div class="form-field">
-                <label for="email">Adres e-mail</label>
+                <label for="email">Email Address</label>
                 <input class="px-2 py-1 border border-gray-400 text-black w-full" id="email" name="email" type="email" required>
               </div>
               <div class="form-field">
-                <label for="phone">Numer telefonu</label>
+                <label for="phone">Phone Number</label>
                 <input class="px-2 py-1 border border-gray-400 text-black w-full" id="phone" name="phone" type="text">
               </div>
               <div class="form-field">
-                <button class="send send-quote p-4">Wyślij zapytanie</button>
+                <button class="send send-quote p-4">Send Inquiry</button>
               </div>
             </form>
           </div>

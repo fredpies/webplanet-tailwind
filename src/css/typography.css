@@ -112,7 +112,7 @@
 /* RESPONSIVE CONTAINER FOR PANEL - DESKTOP FIRST */
 
 .panel-container {
-    @apply .mx-auto .pt-8;
+    @apply .mx-auto;
     width: 1600px;
 }
 

@@ -19,20 +19,24 @@ module.exports = {
         colors: {
 
           wp : {
-            'orange': '#FF6701',
-            'orange-dark': '#8B380D',
-            'red': '#cc3f14',
-            'yellow': '#F7E4BE',
-            'green': '#06734D',
             'blue-dark': '#010433',
-            'spinner-background': '#010B12',
             'blue-darker': '#0e0e14',
             'blue-background': '#232333',
+            'blue-deepspace': '#176f9b',
+            'blue-deepspace-lighter': '#219fde',
             'blue-table-background': '#2c2c40',
             'blue-lighter': '#27334A',
             'blue-light': '#7ED4F6',
             'blue-light-2': '#62a5bf',
-            'black-transparent': 'hsl(120, 100%, 0%, 0.4)'
+            'black-transparent': 'hsl(120, 100%, 0%, 0.4)',
+            'cyan-dark': '#006666',
+            'cyan-lighter': '#00b3b3',
+            'green': '#06734D',
+            'spinner-background': '#010B12',
+            'orange': '#FF6701',
+            'orange-dark': '#8B380D',
+            'red': '#cc3f14',
+            'yellow': '#F7E4BE',	
           }
 
         },

@@ -319,7 +319,7 @@ section#online-products .panels {
 
 section#online-products .panel {
     height: auto;
-    @apply .bg-wp-blue-background .mx-auto;
+    @apply .bg-wp-blue-background .mx-auto border border-gray-900 shadow-md;
 }
 
 section#online-products .panel .panel-wrapper {
@@ -367,6 +367,10 @@ section#online-products .panel-wrapper:hover .panel-overlay-text {
 /* SECTION #calculator */
 
 /* Tooltips */
+
+.tooltip-left:hover {
+@apply opacity-50;
+}
 
 .tooltipster-light {
     position: absolute;
@@ -467,10 +471,6 @@ section#calculator button {
     max-width: 100%;
 }
 
-button:hover {
-   opacity: 0.9;
-}
-
 .calculator-table button:nth-child(2) {
     @apply .ml-1;
 }
@@ -488,16 +488,29 @@ button.plus, button.minus {
     @apply .font-bold .p-0;
 }
 
+button.minus:hover {
+    @apply .bg-orange-500;
+}
+
+button.plus:hover, button.add:hover {
+    @apply .bg-wp-blue-deepspace-lighter;
+}
+
+
 button.plus, button.add {
-    @apply .bg-wp-blue-light-2;
+    @apply .bg-wp-blue-deepspace;
 }
 
 button.send {
-    @apply .bg-wp-green .block .mx-auto .mt-4;
+    @apply .bg-wp-cyan-dark .block .mx-auto .mt-4;
+}
+
+button.send:hover {
+    @apply .bg-wp-cyan-lighter;
 }
 
 button.remove, button.minus {
-    @apply .bg-wp-red;
+    @apply .bg-orange-700;
 }
 
 .calculator-table tfoot td {

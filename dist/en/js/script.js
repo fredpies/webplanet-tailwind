@@ -424,8 +424,8 @@
         validator = $sendForm.validate({
           messages: {
             email: {
-              required: 'Adres e-mail nie może być pusty.',
-              email: 'Wpisany adres e-mail jest niepoprawny.'
+              required: 'Email address field cannot be empty.',
+              email: 'The email address that you have entered is not valid.'
             }
           }
         });
