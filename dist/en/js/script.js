@@ -425,7 +425,7 @@
           messages: {
             email: {
               required: 'Email address field cannot be empty.',
-              email: 'The email address that you have entered is not valid.'
+              email: 'The email address that you have entered is not valid.',
             }
           }
         });
