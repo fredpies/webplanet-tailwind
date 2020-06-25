@@ -220,7 +220,7 @@ section#about-us li {
     transition-property: transform, opacity;
     transition-duration: 400ms;
     opacity: 0;
-    @apply .relative .mt-8 .text-gray-400 .pl-10;
+    @apply .relative .mt-8 .text-wp-blue-cosmic .tracking-wide .pl-10;
 }
 
 section#stay-tuned li {
@@ -228,7 +228,7 @@ section#stay-tuned li {
     transform: translate3d(16px, 0, 0);
     transition-property: transform, opacity;
     transition-duration: 400ms;
-    @apply .relative .mt-8 .text-gray-400 .pl-10 !important;
+    @apply .relative .mt-8 .text-wp-blue-cosmic .tracking-wide .pl-10 !important;
 }
 
 
@@ -354,7 +354,7 @@ section#online-products .panel .panel-overlay-text {
 }
 
 section#online-products .panel .panel-text {
-    @apply .px-8 .py-12 .mt-0 .bg-wp-blue-background .text-gray-400 .flex .items-center .justify-center;
+    @apply .px-8 .py-12 .mt-0 .bg-wp-blue-background .text-wp-blue-cosmic .tracking-wide .flex .items-center .justify-center;
     height: 14rem;
 }
 
@@ -471,7 +471,7 @@ section#calculator .calculator-table tbody tr {
 }
 
 section#calculator button {
-    @apply .text-white .p-2 .rounded .transition-opacity .duration-100;
+    @apply .text-gray-200 .p-2 .rounded .transition-opacity .duration-100;
     min-width: 2.8rem;
     height: 2.8rem;
     line-height: 1;
@@ -510,7 +510,7 @@ button.plus, button.add {
 }
 
 button.send {
-    @apply .bg-wp-cyan-dark .block .mx-auto .mt-4;
+    @apply .bg-wp-cyan-dark .block .mx-auto .my-4;
 }
 
 button.send:hover {

@@ -146,15 +146,16 @@ h2 {
 }
 
 h3 {
-    @apply .tracking-wider;
+    @apply .text-gray-300 .mb-8 .font-audiowide .font-bold .tracking-wider;
 }
 
 p, li:not([class*="menu-item"]) {
-    @apply .text-gray-400 .tracking-wide;
+    @apply .text-wp-blue-cosmic .tracking-wide;
     font-size-responsive: 1.2rem 1.3rem 1680px 1920px;
     font-size-responsive: 0.9rem 1.2rem 320px 1680px;
 }
 
-
-
+span.span-font {
+    @apply .text-wp-blue-cosmic-lighter .tracking-wide font-semibold;
+}
 

@@ -19,6 +19,8 @@ module.exports = {
         colors: {
 
           wp : {
+            'blue-cosmic': '#b8cee8',
+            'blue-cosmic-lighter': '#cbddf2',
             'blue-dark': '#010433',
             'blue-darker': '#0e0e14',
             'blue-background': '#232333',

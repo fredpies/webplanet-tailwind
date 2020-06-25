@@ -1,7 +1,14 @@
-1. W tej liscie "As part of technical support, we offer:" Do dodania te same znaczki co u gory w liscie. [DONE]
-2. "to estimate the pricing of the project". czcionka inna.
-3. Dodac krzyzyk w formularzu zeby zamknac + kilkniecie na tlo poza formularzem powinno go zamknac. [DONE]
-4. Logo w footerze.
-[21:36]
-5. Na background 2gi wrzucic te fusy co tam lataja zeby zobaczyc jak wyglada.
-6. Poszybszyc delikatnie te chmurki z "?" w kalkulatorze zeby szybciej znikaly.
+1. "to estimate the pricing of the project". czcionka inna.
+2. Logo w footerze.
+3. Na background 2gi wrzucic te fusy co tam lataja zeby zobaczyc jak wyglada.
+4. Zmniejszyc opozninienie znikania chmurek z "?". Zmieniles na szybsze pojawianie ale znikanie jest zlagowane troche.
+5. Dodac lepszej jakosci zdjecia.
+6. Wyrownac trzeba znaczek + w butonie. Nie jest rowny na srodku jak -
+7. Poprawic <h3> "tworzone z pasją" na <h2> zeby dzialalo bez znikajacego paddingu pod spodem 
+i przesuwania w gore tekstu ktory jest ponizej - "Jeśli poszukujesz kreatywnego".
+8. Dodac strony na Regulamin, Polityke prywatnosci i Rodo. Ta sama struktura. 
+Footer i background ten sam z ta planeta z plywajacymi fusami. 
+Header nie ma menu tylko buton "Home" z tego menu.
+W <main> tekst. 3 strony takie same z innym tekstem odpowiednim do strony (regulamin, RODO, itd).
+9. No i pozostaje nam zrobienie wersji na telefony. Kalkulator zeby dzialal
+i zeby menu hamburger sie pojawilo albo jakas opcja skakania po stronie i scrollowanie palcem.
