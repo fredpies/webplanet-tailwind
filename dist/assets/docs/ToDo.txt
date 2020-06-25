@@ -1,6 +1,6 @@
-1. W tej liscie "As part of technical support, we offer:" Do dodania te same znaczki co u gory w liscie.
+1. W tej liscie "As part of technical support, we offer:" Do dodania te same znaczki co u gory w liscie. [DONE]
 2. "to estimate the pricing of the project". czcionka inna.
-3. Dodac krzyzyk w formularzu zeby zamknac + kilkniecie na tlo poza formularzem powinno go zamknac.
+3. Dodac krzyzyk w formularzu zeby zamknac + kilkniecie na tlo poza formularzem powinno go zamknac. [DONE]
 4. Logo w footerze.
 [21:36]
 5. Na background 2gi wrzucic te fusy co tam lataja zeby zobaczyc jak wyglada.
