@@ -217,22 +217,31 @@ section#about-us .left-column, section#about-us .right-column {
 section#about-us li {
 
     transform: translate3d(16px, 0, 0);
-    opacity: 0;
     transition-property: transform, opacity;
     transition-duration: 400ms;
+    opacity: 0;
     @apply .relative .mt-8 .text-gray-400 .pl-10;
 }
+
+section#stay-tuned li {
+
+    transform: translate3d(16px, 0, 0);
+    transition-property: transform, opacity;
+    transition-duration: 400ms;
+    @apply .relative .mt-8 .text-gray-400 .pl-10 !important;
+}
+
 
 section#about-us li:nth-child(1), section#about-us li:nth-child(2) {
     transform: translate3d(0, 0, 0);
     opacity: 1;
 }
 
-section#about-us li:before {
+section#about-us li:before, section#stay-tuned li:before {
     position: absolute;
     content: '';
     left: 0;
-    top: 0.2rem;
+    top: 0;
     width: 1.5rem;
     height: 1.5rem;
     background-size: contain;
@@ -319,7 +328,7 @@ section#online-products .panels {
 
 section#online-products .panel {
     height: auto;
-    @apply .bg-wp-blue-background .mx-auto border border-gray-900 shadow-md;
+    @apply .bg-wp-blue-background .mx-auto .border .border-gray-900 .shadow-md;
 }
 
 section#online-products .panel .panel-wrapper {
@@ -368,8 +377,8 @@ section#online-products .panel-wrapper:hover .panel-overlay-text {
 
 /* Tooltips */
 
-.tooltip-left:hover {
-@apply opacity-50;
+[class*="tooltip"]:hover {
+    @apply opacity-50;
 }
 
 .tooltipster-light {
@@ -495,7 +504,6 @@ button.minus:hover {
 button.plus:hover, button.add:hover {
     @apply .bg-wp-blue-deepspace-lighter;
 }
-
 
 button.plus, button.add {
     @apply .bg-wp-blue-deepspace;

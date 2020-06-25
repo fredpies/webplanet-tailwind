@@ -528,7 +528,7 @@
   function closeOverlay(ev) {
     ev.stopPropagation();
 
-    if (ev.target.classList.contains('overlay-contents')) {
+    if (ev.target.classList.contains('close')) {
       $overlayContents$1.fadeOut(150);
       $overlay.fadeOut({
         duration: 200,
