@@ -39,7 +39,7 @@ button:focus {
 
 /* SECTION */
 
-section:not([id="planet"]) {
+section:not([id="top"]) {
     @apply .bg-wp-blue-background .pt-4 .relative
 }
 
@@ -127,18 +127,18 @@ header {
 
 /* SECTION #planet */
 
-section#planet button#see-more {
+section#top button#see-more {
     font-size-responsive: 15px 16px 1280px 1920px;
     font-size-responsive: 14px 15px 768px 1280px;
     @apply .mt-4 .uppercase .border .border-wp-blue-lighter .px-4 .py-2 .text-gray-500 .tracking-wider;
 }
 
-section#planet button#see-more:hover {
+section#top button#see-more:hover {
     @apply .bg-wp-orange-dark .border-wp-orange-dark .text-white;
 
 }
 
-section#planet {
+section#top {
     background-image: linear-gradient(to right, #11111a, rgba(1, 2, 14, 0) 70%);
     background-repeat: no-repeat;
     background-position: left top;
@@ -146,7 +146,7 @@ section#planet {
     z-index: 0;
 }
 
-section#planet #stars {
+section#top #stars {
     @apply .fixed .h-screen;
 }
 
@@ -161,7 +161,7 @@ img.planet {
     filter: saturate(120%) brightness(110%);
 }
 
-section#planet h1 {
+section#top h1 {
     font-size-responsive: 1.55rem 1.6rem 1680px 1920px;
     font-size-responsive: 1.35rem 1.55rem 1440px 1680px;
     font-size-responsive: 1.2rem 1.35rem 1280px 1440px;
@@ -169,7 +169,7 @@ section#planet h1 {
     font-size-responsive: 1.3rem 1.35rem 320px 480px;
 }
 
-section#planet h2 {
+section#top h2 {
 
     font-size-responsive: 1.25rem 1.35rem 1680px 1920px;
     font-size-responsive: 1.15rem 1.25rem 1440px 1680px;
@@ -476,6 +476,11 @@ section#calculator button {
     height: 2.8rem;
     line-height: 1;
 }
+
+section#calculator form {
+    @apply .pb-4;
+}
+
 .overlay-contents .form-field button {
     max-width: 100%;
 }
@@ -707,7 +712,7 @@ label.error {
 
 @media (max-width: 320px) and (orientation: portrait) {
 
-    section#planet h2 {
+    section#top h2 {
         @apply .mb-2;
     }
 }
@@ -757,13 +762,13 @@ label.error {
 }
 
 @media (max-width: 768px) and (max-width: 1024px) {
-    .menu li:last-child {
-        @apply .hidden;
-    }
+    /*.menu li:last-child {*/
+    /*    @apply .hidden;*/
+    /*}*/
 
-    .menu li:nth-child(4) {
-        @apply .mb-0;
-    }
+    /*.menu li:nth-child(4) {*/
+    /*    @apply .mb-0;*/
+    /*}*/
 }
 
 @media (max-width: 480px)  {
@@ -816,10 +821,10 @@ label.error {
     }
 }
 
-/* MEDIA FOR SECTION #planet */
+/* MEDIA FOR SECTION #top */
 
 @media (max-width: 1440px) {
-    section#planet button#see-more {
+    section#top button#see-more {
         @apply .mt-4 .uppercase .border .border-wp-blue-lighter .px-4 .py-2 .text-gray-500 .tracking-wider;
     }
 }
@@ -828,7 +833,7 @@ label.error {
     img.planet {
         top: 36vh;
     }
-    #planet .indicators {
+    section#top .indicators {
         @apply .hidden;
     }
 }
@@ -908,7 +913,7 @@ label.error {
         @apply .mt-20;
     }
 
-    section#planet p {
+    section#top p {
         @apply .mt-4;
     }
 
@@ -920,8 +925,8 @@ label.error {
     }
 }
 
-@media (min-height: 1024px) {
-    #planet .indicators {
+@media (min-height: 1024px) and (orientation: portrait) {
+    #top .indicators {
         @apply .hidden;
     }
 }
@@ -1159,9 +1164,9 @@ label.error {
         @apply .mb-8;
     }
 
-    section#online-products .panels .panel:last-child {
-        @apply .mb-0;
-    }
+    /*section#online-products .panels .panel:last-child {*/
+    /*    @apply .mb-0;*/
+    /*}*/
 
 }
 

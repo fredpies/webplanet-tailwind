@@ -5,8 +5,7 @@
   "main": "",
   "scripts": {
     "server": "live-server --no-browser ./dist",
-    "watch:tailwind": "npx postcss src/css/style.css --map --base src/css --dir dist/css -w",
-    "dev": "cross-env NODE_ENV=development run-p server watch:tailwind"
+    "watch:tailwind": "npx postcss src/css/style.css --map --base src/css --dir dist/css -w"
   },
   "keywords": [],
   "author": "",

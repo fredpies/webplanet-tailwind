@@ -28,21 +28,23 @@
           <div class="logo cursor-pointer"><img src="/assets/img/logo.png"></div>
           <nav class="ml-auto">
             <ul class="menu">
-              <li class="menu-item"><a href="#planet"><i class="icon-home"><span>home</span></i></a></li>
+              <li class="menu-item"><a href="#top"><i class="icon-home"><span>home</span></i></a></li>
               <li class="menu-item"><a href="#about-us"><i class="icon-group"><span>o nas</span></i></a></li>
-              <li class="menu-item"><a href="#online-products"><i class="icon-responsive"><span>oferta</span></i></a></li>
-              <li class="menu-item"><a href="#stay-tuned"><i class="icon-service"><span>usługi</span></i></a></li>
-              <li class="menu-item"><a href="#calculator"><i class="icon-email"><span>kalkulator</span></i></a></li>
+              <li class="menu-item"><a href="#offer"><i class="icon-responsive"><span>oferta</span></i></a></li>
+              <li class="menu-item"><a href="#contact"><i class="icon-email"><span>kontakt</span></i></a></li>
             </ul>
           </nav>
           <button class="hamburger ml-auto"><i class="text-3xl icon-hamburger"></i></button>
         </div>
       </div>
     </header>
-    <!-- MAIN-->
+
     <main><img class="planet fixed right-0 z-10" src="assets/img/planet.png">
+
+    <!-- MAIN SECTIONS-->
+
       <!-- Top section-->
-      <section class="relative xsm:pt-8" id="planet" data-aos>
+      <section class="relative xsm:pt-8" id="top" data-aos>
         <div id="stars"></div>
         <div class="main-container flex items-center" id="planet-contents">
           <div class="main-headline relative w-4/12 lg:w-5/12 md:w-6/12 sm:w-8/12 xsm:w-full">
@@ -60,11 +62,10 @@
             </p>
             <button id="see-more" data-target="#about-us">Czytaj więcej</button>
             <ul class="indicators">
-              <li class="indicator"><a href="#planet"><span>home</span></a></li>
+              <li class="indicator"><a href="#top"><span>home</span></a></li>
               <li class="indicator"><a href="#about-us"><span>o nas</span></a></li>
-              <li class="indicator"><a href="#online-products"><span>oferta</span></a></li>
-              <li class="indicator"><a href="#stay-tuned"><span>usługi</span></a></li>
-              <li class="indicator"><a href="#calculator"><span>kalkulator</span></a></li>
+              <li class="indicator"><a href="#offer"><span>oferta</span></a></li>
+              <li class="indicator"><a href="#contact"><span>kontakt</span></a></li>
             </ul>
           </div>
         </div>
@@ -109,7 +110,7 @@
       </section>
       <!-- Online products-->
       <section id="online-products">
-        <div class="main-container pb-20">
+        <div class="main-container md:pb-4 pb-20">
           <h2 class="pt-8" data-aos="fade-in">Witryny internetowe</h2>
           <h3 class="pb-6" data-aos="fade-in">spełniające twoje potrzeby</h3>
           <div class="panels">
@@ -155,10 +156,9 @@
           </div>
         </div>
       </section>
-      <!-- Service-->
-      <section class="bg-cover bg-fixed" id="stay-tuned" style="background-image: url('assets/img/planet2.jpeg')">
-        <div class="main-container pb-20">
-          <h2 class="py-12">Wsparcie dla naszych klientów</h2>
+      <section class="bg-cover bg-fixed" id="stay-tuned">
+        <div class="main-container">
+          <h2 class="md:py-6 py-12">Wsparcie dla naszych klientów</h2>
           <div class="flex bg-wp-blue-background border border-gray-900" id="stay-tuned-contents">
             <div class="col overflow-hidden relative"><img class="object-cover relative mx-auto" src="assets/img/tablet.png"></div>
             <div class="col flex flex-col justify-center content-center">
@@ -186,6 +186,8 @@
           </div>
         </div>
       </section>
+      <!-- Offer-->
+      <section id="offer"></section>
       <section id="calculator">
         <div class="main-container">
           <h2 class="pt-8">Użyj naszego kalkulatora</h2>
@@ -347,19 +349,17 @@
                     <td class="summary">
                       <div class="sum">PLN 0</div>
                       <div class="tax">z VAT</div>
-                      <button class="send">Wyślij zapytanie</button>
                     </td>
                     <td></td>
                     <td class="summary">
                       <div class="sum">PLN 0</div>
                       <div class="tax">z VAT</div>
-                      <button class="send">Wyślij zapytanie</button>
+
                     </td>
                     <td></td>
                     <td class="summary">
                       <div class="info text-base">
                         Skontaktuj się z nami w celu otrzymania szczegółowej wyceny.
-                        
                       </div>
                     </td>
                   </tr>
@@ -387,6 +387,8 @@
           </div>
         </div>
       </section>
+      <!-- Contact-->
+      <section id="contact"></section>
     </main>
     <!-- PRELOADER OVERLAY-->
     <div class="preloader bg-black flex items-center justify-center fixed inset-0 bg-wp-spinner-background"><img class="spinner" src="/assets/img/spinner.gif"></div>
