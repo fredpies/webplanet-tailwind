@@ -292,7 +292,7 @@
   var currency = 'PLN';
   var $input, $counterElement;
   var $overlayContents, $sendOverlay;
-  var $calculatorSection;
+  var $calculatorContainer, $calculatorInfoText;
   var priceListFixed = {
     'development': [2500, 1000],
     'panel': [1000, 800],
@@ -483,22 +483,24 @@
   }
   function initCalculator() {
     $sendForm = $('#send-form');
-    $calculatorSection = $('section#calculator');
+    $calculatorContainer = $('.calculator-container');
+    $calculatorInfoText = $('.calculator-info-text');
     resetForm();
 
     if (window.innerWidth < 1024) {
-      $calculatorSection.hide();
-      $calculatorSection.attr('id', '');
+      $calculatorContainer.hide();
+      $calculatorInfoText.hide();
+      $calculatorContainer.attr('id', '');
       $('button.add, button.remove').off('click', switchButton);
       $('button.plus, button.minus').off('click', calculateFeature);
       $('button.send').off('click', sendQuote);
     }
 
     if (window.innerWidth >= 1024) {
-      $calculatorSection = $('section:hidden');
-      console.log($calculatorSection);
-      $calculatorSection.attr('id', 'calculator');
-      $calculatorSection.show();
+      $calculatorContainer = $('section:hidden');
+      console.log($calculatorContainer);
+      $calculatorContainer.attr('id', 'calculator');
+      $calculatorContainer.show();
       form = $('form')[0];
       $('button.add, button.remove').on('click', switchButton);
       $('button.plus, button.minus').on('click', calculateFeature);
