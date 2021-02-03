@@ -18,21 +18,21 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/3.3.0/js/jquery.tooltipster.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/cloud9carousel@2.2.0/jquery.cloud9carousel.js"></script>
     <!-- MAIN SCRIPTS-->
     <script src="js/script.js"></script>
   </head>
   <body>
-    <header class="fixed w-full z-20">
+    <header>
       <div class="main-container">
-        <div class="flex items-center py-2">
-          <div class="logo cursor-pointer"><img src="/assets/img/logo.png"></div>
+        <div class="menu-container">
+          <div class="logo"><img src="/assets/img/logo.png"></div>
           <nav class="ml-auto">
             <ul class="menu">
               <li class="menu-item"><a href="#top"><i class="icon-home"><span>home</span></i></a></li>
               <li class="menu-item"><a href="#about-us"><i class="icon-group"><span>o nas</span></i></a></li>
               <li class="menu-item"><a href="#offer"><i class="icon-responsive"><span>oferta</span></i></a></li>
-              <li class="menu-item"><a href="#portfolio"><i class="icon-responsive"><span>portfolio</span></i></a></li>
-              <li class="menu-item"><a href="#contact"><i class="icon-email"><span>kontakt</span></i></a></li>
+              <li class="menu-item portfolio"><a href="#portfolio"><i class="icon-responsive"><span>portfolio</span></i></a></li>
             </ul>
           </nav>
           <button class="hamburger ml-auto"><i class="text-3xl icon-hamburger"></i></button>
@@ -67,7 +67,7 @@
               <li class="indicator"><a href="#about-us"><span>o nas</span></a></li>
               <li class="indicator"><a href="#offer"><span>oferta</span></a></li>
               <li class="indicator"><a href="#portfolio"><span>portfolio</span></a></li>
-              <li class="indicator"><a href="#contact"><span>kontakt</span></a></li>
+<!--              <li class="indicator"><a href="#contact"><span>kontakt</span></a></li>-->
             </ul>
           </div>
         </div>
@@ -84,7 +84,6 @@
               <span class="span-font">Jesteśmy zespołem</span> łączącym umiejętności i pasje w realizacji produktów on-line indywidualnie dopasowanych
                do klientów. Tworzone przez nas produkty są w pełni elastyczne ponieważ <span class="span-font">nie oferujemy rozwiązań
               "z półki"</span>, ale tworzymy je w oparciu o szczegółowe wymagania docelowego użytkownika.
-
 
             </p>
             <p data-aos="fade-in"><span class="span-font">Kładziemy duży nacisk</span> na wizualną stronę produktów on-line ponieważ zdajemy sobie sprawę, że obraz mówi więcej niż tysiąc słów.</p>
@@ -467,11 +466,34 @@
       </section>
 
       <!-- Portfolio -->
+
+
       <section id="portfolio">
 
         <div class="main-container md:pb-4">
-          <h2 class="py-8">Nasze realizacje</h2>
+          <h2 class="pt-8">Nasze realizacje</h2>
+          <h3>Poniżej znajdziesz niektóre z naszych realizacji. Kliknij wybrany obraz aby dowiedzieć się więcej.</h3>
+
+          <div id="gallery">
+            <img data-href="" class="gallery-item" src="https://picsum.photos/640/400" alt="Item #1">
+            <img data-href="" class="gallery-item" src="https://picsum.photos/640/400" alt="Item #2">
+            <img data-href="" class="gallery-item" src="https://picsum.photos/640/400" alt="Item #3">
+            <img data-href="" class="gallery-item" src="https://picsum.photos/640/400" alt="Item #4">
+            <img data-href="" class="gallery-item" src="https://picsum.photos/640/400" alt="Item #5">
+            <img data-href="" class="gallery-item" src="https://picsum.photos/640/400" alt="Item #6">
+          </div>
+
+          <div id="buttons">
+            <button class="left">
+              ←
+            </button>
+            <button class="right">
+              →
+            </button>
+          </div>
+
         </div>
+
 
 
       </section>

@@ -5,7 +5,9 @@
   "main": "",
   "scripts": {
     "server": "live-server --no-browser ./dist",
-    "watch:tailwind": "npx postcss src/css/style.css --map --base src/css --dir dist/css -w"
+    "watch:tailwind": "npx postcss src/css/style.css --map --base src/css --dir dist/css -w",
+    "watch:rollup": "cross-env NODE_ENV=development npx rollup --config --watch",
+    "build:rollup": "cross-env NODE_ENV=production npx rollup --config"
   },
   "keywords": [],
   "author": "",

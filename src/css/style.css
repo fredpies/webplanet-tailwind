@@ -71,14 +71,19 @@ section#stay-tuned {
 /* HEADER */
 
 header {
-    @apply .bg-wp-blue-darker;
+    @apply .bg-wp-blue-darker .fixed .w-full .z-20;
 }
 
 .logo {
+    @apply .cursor-pointer;
     max-width: 8rem;
 }
 
 /* Menu */
+
+.menu-container {
+    @apply .flex .items-center .py-2;
+}
 
 .menu {
     @apply .flex;
@@ -343,7 +348,7 @@ section#offer .panel-container:hover {
     opacity: 1;
 }
 
-section#offer h3 {
+section#offer h3, section#gallery h3 {
     @apply .font-roboto;
 }
 
@@ -403,8 +408,22 @@ section#online-products h3 .next {
     @apply .mt-8;
 }
 
+.panel { height: auto; }
+
+@media (min-width: 1024px) {
+    .panels {
+        @apply .flex .justify-between;
+    }
+
+    .panel-container {
+        width: 30%;
+        margin: 0;
+    }
+
+    .panel { height: 100%; }
+}
+
 .panel, section#offer .panel {
-    height: auto;
     @apply .relative .bg-wp-blue-background .mx-auto .border .border-gray-900 .shadow-md;
 }
 
@@ -555,20 +574,42 @@ section#offer .panel {
 
 section#calculator, section#portfolio {
     @apply .bg-wp-blue-darker;
+
+
 }
 
-section#calculator h2 {
+section#calculator {
+    height: calc(960px - 106px);
+}
+
+section#portfolio {
+    display: none;
+    height: 100vh;
+}
+
+@media (min-width: 1024px) {
+    section#portfolio {
+        display: block;
+    }
+}
+
+
+section#calculator h2, section#portfolio h2 {
     font-size-responsive: 1.3rem 1.3rem 1440px 1680px;
     font-size-responsive: 1rem 1.3rem 768px 1440px;
     font-size-responsive: 1rem 1rem 320px 768px;
 }
 
-section#calculator h3 {
+section#calculator h3, section#portfolio h3 {
     font-size-responsive: 1.25rem 1.25rem 1680px 1920px;
     font-size-responsive: 1.15rem 1.25rem 1440px 1680px;
     font-size-responsive: 1rem 1.15rem 480px 1440px;
     font-size-responsive: 1rem 1rem 320px 480px;
     @apply .font-roboto;
+}
+
+section#portfolio h3 {
+    @apply .mb-16;
 }
 
 section#calculator .calculator-table {
@@ -914,6 +955,14 @@ label.error {
         @apply .mb-0 .pb-0;
     }
 
+    .menu li.portfolio {
+        display: none;
+    }
+
+    @media (min-width: 1024px) {
+        .menu li.portfolio { display: block; }
+    }
+
     .menu li span {
         padding-left: 1.2rem;
         margin-left: auto;
@@ -1035,7 +1084,7 @@ label.error {
     }
 
     .main-headline {
-        @apply .mt-4;
+        @apply .mt-16;
     }
 }
 
@@ -1365,3 +1414,26 @@ label.error {
         max-width: 42%;
     }
 }
+
+/* Gallery */
+#gallery {
+    visibility: hidden;
+    height: calc(870px - 106px); }
+
+#gallery .gallery-item, #buttons button {
+    cursor: pointer;
+}
+
+#gallery .gallery-item {
+    filter: brightness(67%);
+    opacity: 0.9;
+    transition: all 0.2s ease;
+}
+
+#gallery .gallery-item:hover, #gallery .gallery-item.gallery-front-item {
+    filter: brightness(100%);
+    opacity: 1;
+}
+
+
+
