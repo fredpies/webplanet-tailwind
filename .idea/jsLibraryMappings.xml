@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptLibraryMappings">
+    <file url="PROJECT" libraries="{OwlCarousel2, aos, cloud9carousel, jquery-3.5.1, jquery-scrollTo, jquery-validation, particles, tooltipster}" />
+  </component>
+</project>

@@ -67,12 +67,6 @@
     width: 1400px;
 }
 
-/*@media (max-width: 1920px) {*/
-/*    .main-container {*/
-/*        max-width: 1400px;*/
-/*    }*/
-/*}*/
-
 @media (max-width: 1680px) {
     .main-container {
         max-width: 85%;

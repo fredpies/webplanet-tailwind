@@ -72,6 +72,7 @@ section#stay-tuned {
 
 header {
     @apply .bg-wp-blue-darker .fixed .w-full .z-20;
+    z-index: 1000;
 }
 
 .logo {
@@ -151,7 +152,19 @@ header {
     @apply .text-wp-blue-light;
 }
 
-/* SECTION #planet */
+/* SECTION #top */
+
+.planet {
+    @apply .fixed .right-0 .z-10;
+}
+
+.main-headline {
+    @apply .relative;
+}
+
+.main-headline h1 {
+    @apply .uppercase;
+}
 
 section#top button#see-more {
     font-size-responsive: 15px 16px 1280px 1920px;
@@ -331,6 +344,10 @@ section#online-products h3, section#offer h3 {
     @apply .relative;
 }
 
+.offer-asterisk {
+    @apply .mt-8 .text-gray-600
+}
+
 section#offer .panel h2 {
     @apply .mb-4;
 }
@@ -408,7 +425,9 @@ section#online-products h3 .next {
     @apply .mt-8;
 }
 
-.panel { height: auto; }
+.panel {
+    height: auto;
+}
 
 @media (min-width: 1024px) {
     .panels {
@@ -420,7 +439,9 @@ section#online-products h3 .next {
         margin: 0;
     }
 
-    .panel { height: 100%; }
+    .panel {
+        height: 100%;
+    }
 }
 
 .panel, section#offer .panel {
@@ -433,7 +454,7 @@ section#offer .panel {
 }
 
 .panel .panel-wrapper {
-    @apply .cursor-default;
+    @apply .cursor-default .relative;
 }
 
 .panel .panel-top {
@@ -542,7 +563,20 @@ section#offer .panel {
 
 /* Calculator styles */
 
-@media (min-width: 1300px) and (orientation: landscape){
+@media (max-width: 1024px) and (orientation: portrait) {
+    section#calculator {
+        height: calc(1024px - 106px);
+    }
+}
+
+@media (max-width: 768px) {
+    section#calculator {
+        @apply h-auto;
+    }
+}
+
+
+@media (min-width: 1300px) and (orientation: landscape) {
 
     section#calculator .calculator-header {
         @apply .absolute;
@@ -553,6 +587,7 @@ section#offer .panel {
         @apply .ml-auto;
         width: 870px;
     }
+
     section#calculator .calculator-header h2 {
         @apply .mb-4;
     }
@@ -573,14 +608,12 @@ section#offer .panel {
 }
 
 section#calculator, section#portfolio {
-    @apply .bg-wp-blue-darker;
+    /*@apply .bg-wp-blue-darker;*/
 
+    background: linear-gradient(to bottom, #0e0e16 0%, #050505 100%);
 
 }
 
-section#calculator {
-    height: calc(960px - 106px);
-}
 
 section#portfolio {
     display: none;
@@ -960,7 +993,9 @@ label.error {
     }
 
     @media (min-width: 1024px) {
-        .menu li.portfolio { display: block; }
+        .menu li.portfolio {
+            display: block;
+        }
     }
 
     .menu li span {
@@ -1416,23 +1451,77 @@ label.error {
 }
 
 /* Gallery */
-#gallery {
-    visibility: hidden;
-    height: calc(870px - 106px); }
+#gallery { visibility: hidden; }
+
+@media (orientation: landscape) {
+    #gallery, #portfolio {
+        height: calc(100vh - 300px);
+    }
+}
+
+@media (orientation: portrait) {
+    #gallery, #portfolio {
+        height: 60vh !important;
+    }
+}
 
 #gallery .gallery-item, #buttons button {
     cursor: pointer;
 }
 
 #gallery .gallery-item {
+    @apply .relative;
     filter: brightness(67%);
-    opacity: 0.9;
+    opacity: 0.65;
     transition: all 0.2s ease;
+}
+
+#gallery .gallery-item button {
+    @apply .absolute .bg-black .px-6 .py-2 .uppercase;
+    font-size: 1rem;
+    /*border: 1px solid #535353;*/
+    opacity: 0;
+    left: 50%;
+    bottom: 0.3rem;
+    transform: translateX(-50%);
+    transition: all 0.2s linear;
+}
+
+#gallery .gallery-item button:hover {
+    transform: translateX(-50%) scale(1.04);
+}
+
+#gallery .gallery-item.gallery-front-item:hover button {
+    opacity: 0.6;
+
+}
+
+#gallery .gallery-item.gallery-front-item:hover button:hover {
+    @apply .bg-wp-orange-dark;
+    opacity: 0.9;
 }
 
 #gallery .gallery-item:hover, #gallery .gallery-item.gallery-front-item {
     filter: brightness(100%);
     opacity: 1;
+}
+
+#portfolio #buttons {
+    @apply .absolute .text-wp-blue-light .text-4xl;
+    bottom: 8rem;
+
+}
+
+#portfolio #buttons button {
+    transition: all 0.2s ease;
+}
+
+#portfolio #buttons .left:hover {
+    transform: translateX(-0.2rem);
+}
+
+#portfolio #buttons .right:hover {
+    transform: translateX(0.2rem);
 }
 
 

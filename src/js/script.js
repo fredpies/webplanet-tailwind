@@ -3,6 +3,7 @@ import {showStars} from "./lib/stars";
 import {initCarousel} from "./lib/carousel";
 import {initCalculator} from "./lib/calculator";
 import {initGallery} from "./lib/gallery";
+
 // import { initOverlay } from "./lib/overlay";
 
 $(window).on('load', () => {
@@ -28,6 +29,8 @@ $(window).on('load', () => {
 
     /* Scroll to section */
     initScrollToSection();
+
+    /* 3d gallery */
     initGallery();
 
     /* Fadeout preloader */
