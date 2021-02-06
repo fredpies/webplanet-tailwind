@@ -249,7 +249,8 @@ section#about-us p:last-child {
     @apply .mb-0;
 }
 
-section#about-us .left-column, section#about-us .right-column {
+section#about-us .left-column,
+section#about-us .right-column {
     width: 50%;
 }
 
@@ -262,7 +263,8 @@ section#about-us li {
     @apply .relative .mt-8 .text-wp-blue-cosmic .tracking-wide .pl-10;
 }
 
-section#stay-tuned li, section#offer li {
+section#stay-tuned li,
+section#offer li {
 
     transform: translate3d(16px, 0, 0);
     transition-property: transform, opacity;
@@ -271,12 +273,15 @@ section#stay-tuned li, section#offer li {
 }
 
 
-section#about-us li:nth-child(1), section#about-us li:nth-child(2) {
+section#about-us li:nth-child(1),
+section#about-us li:nth-child(2) {
     transform: translate3d(0, 0, 0);
     opacity: 1;
 }
 
-section#about-us li:before, section#stay-tuned li:before, section#offer li:before {
+section#about-us li:before,
+section#stay-tuned li:before,
+section#offer li:before {
     position: absolute;
     content: '';
     left: 0;
@@ -300,7 +305,7 @@ section#stay-tuned {
 }
 
 li {
-    @apply .relative .mt-4 .pl-4  .text-gray-400;
+    @apply .relative .mt-4 .pl-4 .text-gray-400;
 }
 
 section#stay-tuned .col {
@@ -330,13 +335,15 @@ section#stay-tuned .col:not(:first-child) p:last-of-type {
 
 /* SECTIONS #online-products, #offer */
 
-section#online-products h2, section#offer h2 {
+section#online-products h2,
+section#offer h2 {
     font-size-responsive: 1.3rem 1.3rem 1440px 1680px;
     font-size-responsive: 1rem 1.3rem 768px 1440px;
     font-size-responsive: 1rem 1rem 320px 768px;
 }
 
-section#online-products h3, section#offer h3 {
+section#online-products h3,
+section#offer h3 {
     font-size-responsive: 1.25rem 1.25rem 1680px 1920px;
     font-size-responsive: 1.15rem 1.25rem 1440px 1680px;
     font-size-responsive: 1rem 1.15rem 480px 1440px;
@@ -365,7 +372,8 @@ section#offer .panel-container:hover {
     opacity: 1;
 }
 
-section#offer h3, section#gallery h3 {
+section#offer h3,
+section#gallery h3 {
     @apply .font-roboto;
 }
 
@@ -402,7 +410,8 @@ section#offer .panel .panel-text {
     }
 }
 
-section#online-products, section#offer {
+section#online-products,
+section#offer {
     @apply .bg-wp-blue-darker;
 }
 
@@ -444,7 +453,8 @@ section#online-products h3 .next {
     }
 }
 
-.panel, section#offer .panel {
+.panel,
+section#offer .panel {
     @apply .relative .bg-wp-blue-background .mx-auto .border .border-gray-900 .shadow-md;
 }
 
@@ -607,7 +617,8 @@ section#offer .panel {
     }
 }
 
-section#calculator, section#portfolio {
+section#calculator,
+section#portfolio {
     /*@apply .bg-wp-blue-darker;*/
 
     background: linear-gradient(to bottom, #0e0e16 0%, #050505 100%);
@@ -627,13 +638,15 @@ section#portfolio {
 }
 
 
-section#calculator h2, section#portfolio h2 {
+section#calculator h2,
+section#portfolio h2 {
     font-size-responsive: 1.3rem 1.3rem 1440px 1680px;
     font-size-responsive: 1rem 1.3rem 768px 1440px;
     font-size-responsive: 1rem 1rem 320px 768px;
 }
 
-section#calculator h3, section#portfolio h3 {
+section#calculator h3,
+section#portfolio h3 {
     font-size-responsive: 1.25rem 1.25rem 1680px 1920px;
     font-size-responsive: 1.15rem 1.25rem 1440px 1680px;
     font-size-responsive: 1rem 1.15rem 480px 1440px;
@@ -720,12 +733,17 @@ button:active {
     opacity: 0.8;
 }
 
-button.add, button.remove, button.send, .tax, .sum {
+button.add,
+button.remove,
+button.send,
+.tax,
+.sum {
     @apply .text-base;
     max-width: 6rem;
 }
 
-button.plus, button.minus {
+button.plus,
+button.minus {
     @apply .font-bold .p-0;
 }
 
@@ -733,11 +751,13 @@ button.minus:hover {
     @apply .bg-orange-500;
 }
 
-button.plus:hover, button.add:hover {
+button.plus:hover,
+button.add:hover {
     @apply .bg-wp-blue-deepspace-lighter;
 }
 
-button.plus, button.add {
+button.plus,
+button.add {
     @apply .bg-wp-blue-deepspace;
 }
 
@@ -749,7 +769,8 @@ button.send:hover {
     @apply .bg-wp-cyan-lighter;
 }
 
-button.remove, button.minus {
+button.remove,
+button.minus {
     @apply .bg-orange-700;
 }
 
@@ -770,11 +791,11 @@ button.remove, button.minus {
 }
 
 .calculator-table .tax {
-    @apply .text-right  .text-gray-400 .mx-auto ;
+    @apply .text-right .text-gray-400 .mx-auto;
 }
 
 .calculator-table .sum {
-    @apply .mx-auto  .font-bold;
+    @apply .mx-auto .font-bold;
 }
 
 /* FOOTER */
@@ -1225,7 +1246,8 @@ label.error {
         @apply .flex-col;
     }
 
-    section#about-us #about-us-contents .left-column, section#about-us #about-us-contents .right-column {
+    section#about-us #about-us-contents .left-column,
+    section#about-us #about-us-contents .right-column {
         @apply .w-full .mt-8;
     }
 
@@ -1245,7 +1267,8 @@ label.error {
         @apply .flex-col;
     }
 
-    section#about-us #about-us-contents .left-column, section#about-us #about-us-contents .right-column {
+    section#about-us #about-us-contents .left-column,
+    section#about-us #about-us-contents .right-column {
         @apply .w-full .mt-8 .pl-0 .pr-0;
     }
 
@@ -1253,7 +1276,8 @@ label.error {
 
 @media (min-height: 650px) and (min-width: 1024px) {
 
-    section#about-us #about-us-contents #who-we-are, section#about-us #about-us-contents #high-quality-services {
+    section#about-us #about-us-contents #who-we-are,
+    section#about-us #about-us-contents #high-quality-services {
         @apply .mb-16;
     }
 
@@ -1362,7 +1386,8 @@ label.error {
         @apply .flex-col;
     }
 
-    section#stay-tuned .col:first-child, section#stay-tuned .col:nth-child(2) {
+    section#stay-tuned .col:first-child,
+    section#stay-tuned .col:nth-child(2) {
         @apply .w-full;
     }
 
@@ -1451,21 +1476,28 @@ label.error {
 }
 
 /* Gallery */
-#gallery { visibility: hidden; }
+#gallery {
+    visibility: hidden;
+}
 
 @media (orientation: landscape) {
-    #gallery, #portfolio {
+
+    #gallery,
+    #portfolio {
         height: calc(100vh - 300px);
     }
 }
 
 @media (orientation: portrait) {
-    #gallery, #portfolio {
+
+    #gallery,
+    #portfolio {
         height: 60vh !important;
     }
 }
 
-#gallery .gallery-item, #buttons button {
+#gallery .gallery-item,
+#buttons button {
     cursor: pointer;
 }
 
@@ -1501,7 +1533,8 @@ label.error {
     opacity: 0.9;
 }
 
-#gallery .gallery-item:hover, #gallery .gallery-item.gallery-front-item {
+#gallery .gallery-item:hover,
+#gallery .gallery-item.gallery-front-item {
     filter: brightness(100%);
     opacity: 1;
 }
@@ -1523,6 +1556,3 @@ label.error {
 #portfolio #buttons .right:hover {
     transform: translateX(0.2rem);
 }
-
-
-

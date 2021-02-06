@@ -4,8 +4,8 @@
 
     font-family: audiowide;
     src: url('../assets/fonts/Audiowide-Regular.eot'),
-    url('../assets/fonts/Audiowide-Regular.svg') format('svg'),
-    url('../assets/fonts/Audiowide-Regular.woff') format('woff');
+        url('../assets/fonts/Audiowide-Regular.svg') format('svg'),
+        url('../assets/fonts/Audiowide-Regular.woff') format('woff');
 
     font-weight: normal;
     font-style: normal;
@@ -14,17 +14,18 @@
 
 @font-face {
     font-family: 'menu-icons';
-    src:  url('../assets/fonts/menu-icons.eot?4jd2pc');
-    src:  url('../assets/fonts/menu-icons.eot?4jd2pc#iefix') format('embedded-opentype'),
-    url('../assets/fonts/menu-icons.ttf') format('truetype'),
-    url('../assets/fonts/menu-icons.woff') format('woff'),
-    url('../assets/fonts/menu-icons.svg') format('svg');
+    src: url('../assets/fonts/menu-icons.eot?4jd2pc');
+    src: url('../assets/fonts/menu-icons.eot?4jd2pc#iefix') format('embedded-opentype'),
+        url('../assets/fonts/menu-icons.ttf') format('truetype'),
+        url('../assets/fonts/menu-icons.woff') format('woff'),
+        url('../assets/fonts/menu-icons.svg') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: block;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="icon-"],
+[class*=" icon-"] {
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'menu-icons' !important;
     speak: none;
@@ -42,12 +43,15 @@
 .icon-email:before {
     content: "\e900";
 }
+
 .icon-responsive:before {
     content: "\e901";
 }
+
 .icon-group:before {
     content: "\e902";
 }
+
 .icon-home:before {
     content: "\e903";
 }
@@ -116,7 +120,7 @@
     }
 }
 
-@media (max-width: 480px) and (orientation: portrait){
+@media (max-width: 480px) and (orientation: portrait) {
     .panel-container {
         max-width: 80%;
     }
@@ -143,13 +147,16 @@ h3 {
     @apply .text-gray-300 .mb-8 .font-audiowide .font-bold .tracking-wider;
 }
 
-p, div, li:not([class*="menu-item"]) {
-    @apply .text-wp-blue-cosmic .tracking-wide;
+p,
+div,
+li:not([class*="menu-item"]) {
+    @apply .text-wp-white-dirty .tracking-wide;
+
     font-size-responsive: 1.2rem 1.3rem 1680px 1920px;
     font-size-responsive: 0.9rem 1.2rem 320px 1680px;
 }
 
+
 span.span-font {
     @apply .text-wp-blue-cosmic-lighter .tracking-wide font-semibold;
 }
-
