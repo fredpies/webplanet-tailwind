@@ -39,7 +39,7 @@ module.exports = {
           'orange-dark': '#8B380D',
           'red': '#cc3f14',
           'spinner-background': '#010B12',
-          'white-dirty': '#d4dae2',
+          'white-blueish': '#d4dae2',
           'yellow': '#F7E4BE',
         }
 
