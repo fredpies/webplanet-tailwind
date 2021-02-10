@@ -649,10 +649,17 @@ section#portfolio {
         height: calc(100vh - 8rem);
     }
 }
-@media (min-width: 1680px) {
+@media (min-width: 1281px) {
     section#portfolio {
         display: block;
-        height: calc(100vh - 20rem);
+        height: calc(100vh - 18rem);
+    }
+}
+
+@media (min-width: 1681px) {
+    section#portfolio {
+        display: block;
+        height: calc(100vh - 19rem);
     }
 }
 
@@ -675,7 +682,7 @@ section#portfolio h3 {
 }
 
 section#portfolio h3 {
-    @apply .mb-16;
+    @apply .mb-4;
 }
 
 @media (max-width: 1024px) {
@@ -1538,10 +1545,18 @@ label.error {
     }
 }
 
-@media (min-width: 1401px) {
+@media (min-width: 1281px) {
     #gallery,
     #portfolio {
-        height: calc(100vh - 22rem);
+        height: calc(100vh - 20rem);
+    }
+}
+
+
+@media (min-width: 1681px) {
+    #gallery,
+    #portfolio {
+        height: calc(100vh - 18rem);
     }
 }
 
