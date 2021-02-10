@@ -226,20 +226,10 @@ function switchButton(ev) {
 
 }
 
-export function resetForm() {
-    $sendForm[0].reset();
-    if (validator) {
-        validator.resetForm();
-        validator.destroy();
-    }
-}
 
 export function initCalculator() {
 
-    $sendForm = $('#send-form');
     $calculatorContainer = $('.calculator-container');
-
-    resetForm();
 
     if (window.innerWidth < 1024) {
 

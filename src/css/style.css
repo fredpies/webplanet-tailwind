@@ -570,13 +570,20 @@ section#offer .panel {
 .tooltip_templates {
     display: none;
 }
-
 /* Calculator styles */
 
 @media (max-width: 1024px) and (orientation: portrait) {
     section#calculator {
         height: calc(1024px - 106px);
     }
+}
+
+@media (max-width: 768px) and (orientation: portrait) {
+
+    .calculator-container {
+        display: none;
+    }
+
 }
 
 @media (max-width: 768px) {
@@ -620,11 +627,9 @@ section#offer .panel {
 section#calculator,
 section#portfolio {
     /*@apply .bg-wp-blue-darker;*/
-
     background: linear-gradient(to bottom, #0e0e16 0%, #050505 100%);
 
 }
-
 
 section#portfolio {
     display: none;
@@ -634,8 +639,23 @@ section#portfolio {
 @media (min-width: 1024px) {
     section#portfolio {
         display: block;
+        height: calc(100vh - 4rem);
     }
 }
+
+@media (min-width: 1280px) {
+    section#portfolio {
+        display: block;
+        height: calc(100vh - 8rem);
+    }
+}
+@media (min-width: 1680px) {
+    section#portfolio {
+        display: block;
+        height: calc(100vh - 20rem);
+    }
+}
+
 
 
 section#calculator h2,
@@ -656,6 +676,12 @@ section#portfolio h3 {
 
 section#portfolio h3 {
     @apply .mb-16;
+}
+
+@media (max-width: 1024px) {
+    section#portfolio h3 {
+        @apply .mb-8;
+    }
 }
 
 section#calculator .calculator-table {
@@ -975,10 +1001,18 @@ label.error {
 
 /* MEDIA FOR HEADER */
 
-@media (min-width: 1280px) {
+@media (min-width: 1024px) {
     .logo {
-        max-width: 11rem;
+        max-width: 155px;
     }
+}
+
+@media (max-width: 768px) {
+
+    .logo {
+        max-width: 9rem;
+    }
+
 }
 
 @media (max-width: 480px) {
@@ -1480,11 +1514,19 @@ label.error {
     visibility: hidden;
 }
 
-@media (orientation: landscape) {
+@media (max-width: 1400px) and (orientation: landscape) {
 
     #gallery,
     #portfolio {
-        height: calc(100vh - 300px);
+        height: calc(100vh - 350px);
+    }
+}
+
+@media (max-width: 1024px) and (orientation: landscape) {
+
+    #gallery,
+    #portfolio {
+        height: calc(100vh - 82px);
     }
 }
 
@@ -1495,6 +1537,14 @@ label.error {
         height: 60vh !important;
     }
 }
+
+@media (min-width: 1401px) {
+    #gallery,
+    #portfolio {
+        height: calc(100vh - 22rem);
+    }
+}
+
 
 #gallery .gallery-item,
 #buttons button {
@@ -1541,8 +1591,13 @@ label.error {
 
 #portfolio #buttons {
     @apply .absolute .text-wp-blue-light .text-4xl;
-    bottom: 8rem;
+    bottom: 1rem;
+}
 
+@media (max-width: 1024px) {
+    #portfolio #buttons {
+        bottom: 0;
+    }
 }
 
 #portfolio #buttons button {

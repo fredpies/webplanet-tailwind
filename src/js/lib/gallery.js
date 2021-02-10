@@ -31,6 +31,8 @@ export function initGallery() {
 
     if (window.innerWidth >= 1024) {
 
+        console.log('called')
+
         $gallery.Cloud9Carousel({
             buttonLeft: $("#buttons > .left"),
             buttonRight: $("#buttons > .right"),
@@ -46,6 +48,7 @@ export function initGallery() {
             onLoaded: () => {
                 $gallery.css('display', 'none');
                 $gallery.css('visibility', 'visible');
+                console.log($gallery);
                 $gallery.fadeIn(300);
                 initReflections();
 
