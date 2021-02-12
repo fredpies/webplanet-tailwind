@@ -200,7 +200,7 @@ img.planet {
     filter: saturate(120%) brightness(110%);
 }
 
-section#top h1 {
+section#top h1, section#cookies h1, section#policy h1 {
     font-size-responsive: 1.55rem 1.6rem 1680px 1920px;
     font-size-responsive: 1.35rem 1.55rem 1440px 1680px;
     font-size-responsive: 1.2rem 1.35rem 1280px 1440px;
@@ -274,14 +274,21 @@ section#offer li {
 
 
 section#about-us li:nth-child(1),
-section#about-us li:nth-child(2) {
+section#about-us li:nth-child(2),
+section#cookies li:nth-child(1),
+section#cookies li:nth-child(2)
+
+{
     transform: translate3d(0, 0, 0);
     opacity: 1;
 }
 
 section#about-us li:before,
 section#stay-tuned li:before,
-section#offer li:before {
+section#offer li:before,
+section#cookies li:before
+
+{
     position: absolute;
     content: '';
     left: 0;
@@ -544,7 +551,6 @@ section#offer .panel {
     @apply .opacity-100;
 }
 
-
 /* SECTION #calculator */
 
 /* Tooltips */
@@ -626,44 +632,25 @@ section#offer .panel {
 
 section#calculator,
 section#portfolio {
-    /*@apply .bg-wp-blue-darker;*/
     background: linear-gradient(to bottom, #0e0e16 0%, #050505 100%);
 
 }
 
 section#portfolio {
     display: none;
-    height: 100vh;
 }
 
 @media (min-width: 1024px) {
     section#portfolio {
         display: block;
-        height: calc(100vh - 4rem);
     }
 }
 
 @media (min-width: 1280px) {
     section#portfolio {
         display: block;
-        height: calc(100vh - 8rem);
     }
 }
-@media (min-width: 1281px) {
-    section#portfolio {
-        display: block;
-        height: calc(100vh - 18rem);
-    }
-}
-
-@media (min-width: 1681px) {
-    section#portfolio {
-        display: block;
-        height: calc(100vh - 19rem);
-    }
-}
-
-
 
 section#calculator h2,
 section#portfolio h2 {
@@ -693,7 +680,7 @@ section#portfolio h3 {
 
 section#calculator .calculator-table {
     @apply .mx-auto .mt-8 .border-collapse;
-    max-width—: 1440px;
+    max-width: 1440px;
 }
 
 section#calculator .calculator-table tbody td {
@@ -719,6 +706,13 @@ section#calculator .calculator-table td span {
 
     @apply .inline-block;
 }
+
+section#calculator .calculator-table td span.span-en[class] {
+
+    font-size-responsive: 1rem 1rem 1680px 1920px;
+
+}
+
 
 section#calculator .calculator-table tr td.custom {
     @apply .text-center .text-base .text-gray-400 .px-8 .w-56;
@@ -829,6 +823,29 @@ button.minus {
 
 .calculator-table .sum {
     @apply .mx-auto .font-bold;
+}
+
+/* SECTION #cookies and SECTION #policy */
+
+section#cookies p:not(:last-child), section#policy p:not(:last-child) {
+    @apply .mb-4;
+}
+
+section#cookies, section#policy {
+    padding-top: 95px;
+    @apply .pb-8;
+}
+
+section#cookies h3, section#policy h3 {
+    @apply .py-4;
+}
+
+section#cookies ul {
+    @apply .pl-4 .mb-8;
+}
+
+section#cookies li {
+    @apply .pl-8 .break-words;
 }
 
 /* FOOTER */
@@ -1161,7 +1178,7 @@ label.error {
 @media (max-width: 768px) and (orientation: portrait) {
     img.planet {
         top: 35vh;
-        width: 55vw;
+        width: 100vw;
     }
 }
 
@@ -1177,7 +1194,7 @@ label.error {
 
     img.planet {
         top: 40vh;
-        width: 60vw;
+        width: 100vw;
     }
 
     .main-headline {
@@ -1521,21 +1538,50 @@ label.error {
     visibility: hidden;
 }
 
-@media (max-width: 1400px) and (orientation: landscape) {
+@media (max-width: 1679px) and (orientation: landscape) {
 
     #gallery,
     #portfolio {
-        height: calc(100vh - 350px);
+        height: calc(100vh - 300px);
     }
 }
+
+@media (max-width: 1440px) and (orientation: landscape) {
+
+    #gallery,
+    #portfolio {
+        height: calc(100vh - 160px);
+    }
+}
+
+@media (max-width: 1440px) and (max-height: 800px) and (orientation: landscape) {
+
+    #gallery,
+    #portfolio {
+        height: calc(100vh - 95px);
+    }
+}
+
 
 @media (max-width: 1024px) and (orientation: landscape) {
 
     #gallery,
     #portfolio {
-        height: calc(100vh - 82px);
+        height: calc(100vh - 70px);
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (orientation: portrait) {
 
@@ -1545,18 +1591,11 @@ label.error {
     }
 }
 
-@media (min-width: 1281px) {
+
+@media (min-width: 1680px) {
     #gallery,
     #portfolio {
-        height: calc(100vh - 20rem);
-    }
-}
-
-
-@media (min-width: 1681px) {
-    #gallery,
-    #portfolio {
-        height: calc(100vh - 18rem);
+        height: calc(100vh - 90px);
     }
 }
 

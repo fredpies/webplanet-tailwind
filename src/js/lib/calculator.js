@@ -1,5 +1,5 @@
 let form;
-let currency = 'PLN';
+let currency = 'EUR';
 let $input, $counterElement;
 let $overlayContents, $sendOverlay;
 let $calculatorContainer;
@@ -215,7 +215,7 @@ function switchButton(ev) {
 
     //
 
-    if (currentVisibleClassName === "add") $input[0].value = getFixedPrice($input[0].name, 'PLN');
+    if (currentVisibleClassName === "add") $input[0].value = getFixedPrice($input[0].name, 'EUR');
     else $input[0].value = 0;
 
     $($parent).find('button').removeClass('hidden');

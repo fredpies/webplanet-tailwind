@@ -28,9 +28,9 @@ export function initCarousel() {
                 autoplayTimeout: 8000,
 
                 responsive: {
-                    480: {
-                        items: 2
-                    },
+                    // 480: {
+                    //     items: 2
+                    // },
 
                     768: {
                         items: 2,

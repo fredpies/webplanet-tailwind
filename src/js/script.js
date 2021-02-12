@@ -24,7 +24,7 @@ $(window).on('load', () => {
     if (window.innerWidth >= 768) showStars();
 
     /* Carousel */
-    if (window.innerWidth > 480 && window.innerWidth < 1024) initCarousel();
+    if (window.innerWidth > 550 && window.innerWidth < 1024) initCarousel();
     $(window).on('resize', initCarousel);
 
     /* Scroll to section */

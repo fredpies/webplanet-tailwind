@@ -231,9 +231,9 @@
             margin: 25,
             autoplayTimeout: 8000,
             responsive: {
-              480: {
-                items: 2
-              },
+              // 480: {
+              //     items: 2
+              // },
               768: {
                 items: 2,
                 margin: 40
@@ -248,7 +248,7 @@
       }
     }
 
-    let currency = 'PLN';
+    let currency = 'EUR';
     let $input, $counterElement;
     let $overlayContents, $sendOverlay;
     let $calculatorContainer;
@@ -425,7 +425,7 @@
       } //
 
 
-      if (currentVisibleClassName === "add") $input[0].value = getFixedPrice($input[0].name, 'PLN');else $input[0].value = 0;
+      if (currentVisibleClassName === "add") $input[0].value = getFixedPrice($input[0].name, 'EUR');else $input[0].value = 0;
       $($parent).find('button').removeClass('hidden');
       $target.addClass('hidden');
       updateSummary(2, getSummary(2));
@@ -542,7 +542,7 @@
       if (window.innerWidth >= 768) showStars();
       /* Carousel */
 
-      if (window.innerWidth > 480 && window.innerWidth < 1024) initCarousel();
+      if (window.innerWidth > 550 && window.innerWidth < 1024) initCarousel();
       $(window).on('resize', initCarousel);
       /* Scroll to section */
 

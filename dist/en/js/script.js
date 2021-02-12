@@ -248,7 +248,7 @@
       }
     }
 
-    let currency = 'PLN';
+    let currency = 'EUR';
     let $input, $counterElement;
     let $overlayContents, $sendOverlay;
     let $calculatorContainer;
@@ -272,7 +272,7 @@
       'animations': [[100, 80], [50, 50]],
       'animations-multi': [[100, 80], [50, 50]]
     };
-    let $sendForm, validator;
+    let $sendForm;
 
     function getFixedPrice(type, currency) {
       if (currency === 'PLN') return priceListFixed[type][0];
@@ -380,7 +380,7 @@
         complete: function () {
           document.body.style.overflowY = 'hidden'; // Init validator
 
-          validator = $sendForm.validate({
+          $sendForm.validate({
             messages: {
               email: {
                 required: 'Adres e-mail nie może być pusty.',
@@ -425,25 +425,15 @@
       } //
 
 
-      if (currentVisibleClassName === "add") $input[0].value = getFixedPrice($input[0].name, 'PLN');else $input[0].value = 0;
+      if (currentVisibleClassName === "add") $input[0].value = getFixedPrice($input[0].name, 'EUR');else $input[0].value = 0;
       $($parent).find('button').removeClass('hidden');
       $target.addClass('hidden');
       updateSummary(2, getSummary(2));
       updateSummary(4, getSummary(4));
     }
 
-    function resetForm() {
-      $sendForm[0].reset();
-
-      if (validator) {
-        validator.resetForm();
-        validator.destroy();
-      }
-    }
     function initCalculator() {
-      $sendForm = $('#send-form');
       $calculatorContainer = $('.calculator-container');
-      resetForm();
 
       if (window.innerWidth < 1024) {
         $calculatorContainer.hide();
@@ -514,6 +504,7 @@
       initRefs();
 
       if (window.innerWidth >= 1024) {
+        console.log('called');
         $gallery.Cloud9Carousel({
           buttonLeft: $("#buttons > .left"),
           buttonRight: $("#buttons > .right"),
@@ -528,6 +519,7 @@
           onLoaded: () => {
             $gallery.css('display', 'none');
             $gallery.css('visibility', 'visible');
+            console.log($gallery);
             $gallery.fadeIn(300);
             initReflections();
           }
