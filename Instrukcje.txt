@@ -1,0 +1,9 @@
+npx live-server --no-browser ./dist
+
+npm run watch:rollup
+
+npx postcss src/css/style.css --map --base src/css --dir dist/css -w
+
+npx postcss src/css/style.css --map --base src/css --dir dist/en/css -w
+
+
