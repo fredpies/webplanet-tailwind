@@ -637,6 +637,7 @@ section#portfolio {
 }
 
 section#portfolio {
+    @apply .overflow-hidden;
     display: none;
 }
 
@@ -1550,7 +1551,7 @@ label.error {
 
     #gallery,
     #portfolio {
-        height: calc(100vh - 160px);
+        height: calc(100vh - 150px);
     }
 }
 
