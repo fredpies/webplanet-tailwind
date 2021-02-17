@@ -1,5 +1,5 @@
 let form;
-let currency = 'EUR';
+let currency = 'PLN';
 let $input, $counterElement;
 let $overlayContents, $sendOverlay;
 let $calculatorContainer;
@@ -215,7 +215,7 @@ function switchButton(ev) {
 
     //
 
-    if (currentVisibleClassName === "add") $input[0].value = getFixedPrice($input[0].name, 'EUR');
+    if (currentVisibleClassName === "add") $input[0].value = getFixedPrice($input[0].name, 'PLN');
     else $input[0].value = 0;
 
     $($parent).find('button').removeClass('hidden');
@@ -265,7 +265,7 @@ export function initCalculator() {
             theme: 'tooltipster-light',
             side: ['right'],
             delay: 0,
-            timer: 0,
+            timer:0,
             maxWidth: 300,
             contentCloning: true,
             contentAsHTML: true

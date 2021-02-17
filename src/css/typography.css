@@ -56,9 +56,9 @@
     content: "\e903";
 }
 
-.icon-hamburger:before {
-    content: "\e904";
-}
+/*.icon-hamburger:before {*/
+/*    content: "\e904";*/
+/*}*/
 
 .icon-service:before {
     content: "\e905";

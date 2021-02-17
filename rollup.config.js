@@ -12,7 +12,7 @@ export default {
     plugins: [
 
         babel({ babelHelpers: 'bundled' }),
-        process.env.NODE_ENV === 'production' ? terser() : undefined
+        terser()
     ]
 
 }

@@ -6,6 +6,7 @@
   "scripts": {
     "server": "npx live-server --no-browser ./dist",
     "watch:tailwind": "npx postcss src/css/style.css --map --base src/css --dir dist/css -w",
+    "watch:tailwind-en": "npx postcss src/css/style.css --map --base src/css --dir dist/en/css -w",
     "watch:rollup": "cross-env NODE_ENV=development npx rollup --config --watch",
     "build:rollup": "cross-env NODE_ENV=production npx rollup --config"
   },
@@ -21,6 +22,7 @@
     "autoprefixer": "^9.7.6",
     "babel-preset-es2015-rollup": "^3.0.0",
     "cross-env": "^7.0.2",
+    "cssnano": "^4.1.10",
     "jquery": "^3.5.1",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.2.4",
@@ -29,6 +31,5 @@
     "postcss-responsive-font": "^1.0.6",
     "rollup-plugin-terser": "^5.3.0",
     "tailwindcss": "^1.4.4"
-  },
-  "dependencies": {}
+  }
 }
